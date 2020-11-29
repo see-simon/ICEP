@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: verdana;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+header{
+ background-color: black;
+ color: white; 
+ text-align: center; 
+font-family: verdana;
+background-image: url("heading.jpg");
+background-repeat: no-repeat;
+background-size: cover;   
+    
+}
+footer{
+  background-color: black;
+ color: white; 
+ text-align: center; 
+ font-family: verdana;
+ height:150px;
+ width: auto; 
+ background-image: url("heading.jpg");
+background-repeat: no-repeat;
+background-size: cover;  
+    
+}
+section{
+    
+height: 950px;
+width: auto;
+background:#EAF4F0;
+text-align: center;  
+background-image: url("background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+input
+{
+
+width: 400px; 
+height: 50px;
+border-radius: 4px;
+box-sizing: border-box; 
+text-align: center; 
+color:rgb(0, 0, 0);
+background-color:;
+font-family:sans-serif;
+font-size: 20px;
+border: ridge;
+
+}
+input[type=submit]
+{
+ 
+  background-color: blue;  
+  color: white;
+  height:65px;
+  width: 150px;
+  float: center;  
+}
+h3{
+ color: black;
+
+ text-shadow: white;   
+}
+table
+{
+    
+   border: 4px;
+   background-color:black;
+   text-align: center;
+   width: 930px;
+   height: 75px;
+   color: white;
+   
+}
+a
+{
+color: white;    
+      
+}
+h2
+{
+ color:white ;   
+    
+}
+div.form
+{
+
+background-color: aliceblue;
+margin-left: 260px;
+margin-right: 260px;
+background-image: url("form.png");
+background-repeat:unset;
+height: 400px;
+}
+
+div.top
+{
+background-color: black;
+font-family:Verdana;
+
+}
+
+</style>
+
+</head>
+
+<body>
+<?php
+	require("signIn.php");
+?>
+<br>
+<header>
+<br>
+<h2>Appointments</h2>
+<br>
+</header>
+
+
+<div>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">Covid-19 Rules</a></li>
+  
+  <li><a href="form.html">Book Here</a></li>
+  <li><a href="login.html">View Appointment</a> </li>
+</ul>
+</div>
+
+<section>
+<br>
+<br>
+<div class="form">
+    <br>
+<div class="top">
+    <br>
+      <h3 style="color:white;">Admin </h3>
+    <br>
+    </div>
+<form action="admin.php" method="POST">
+<br><input type="text" name="username" placeholder="Staff.No" required/><br>
+
+<br><input type="password" name="password" placeholder="password"required/><br>
+
+<br><input type="submit" value="Login"/><br>
+</form>
+<br>
+<br>
+</div>
+
+</section>
+
+<footer>
+<br>
+<h3 style="color:white">copy rights 2020</h3>
+<br>
+</footer>
+</body>
+</html>
